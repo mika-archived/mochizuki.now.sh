@@ -1,0 +1,27 @@
+{
+  "name": "@mikazuki/mochizuki.now.sh",
+  "version": "1.0.0",
+  "description": "dynamic contents that hosted by now.sh",
+  "main": "dist/index.js",
+  "repository": "https://github.com/mika-f/mochizuki.now.sh",
+  "author": "Fuyuno Mikazuki",
+  "license": "MIT",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "@octokit/graphql": "^4.3.1"
+  },
+  "devDependencies": {
+    "@now/node": "^1.4.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "parcel": "^2.0.0-alpha.3.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}
