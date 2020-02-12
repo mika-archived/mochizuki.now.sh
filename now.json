@@ -6,5 +6,20 @@
   },
   "env": {
     "GITHUB_TOKEN": "@github-token"
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/.*",
+      "methods": ["GET", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+      },
+      "continue": true
+    },
+    {
+      "src": "/api/([^/]+)",
+      "dest": "/$1.js"
+    }
+  ]
 }
