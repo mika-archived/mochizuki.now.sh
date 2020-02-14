@@ -37,7 +37,9 @@ export default async (request: NowRequest, response: NowResponse): Promise<void>
     }
   );
 
-  const items: any[] = user.pinnableItems.edges.map(w => w.node).sort((a, b) => b.stargazers.totalCount - a.stargazers.totalCount);
+  const items: any[] = user.pinnableItems.edges
+    .map(w => w.node)
+    .sort((a, b) => b.forks.totalCount * 2 + b.stargazers.totalCount - (a.forks.totalCount * 2 + a.stargazers.totalCount));
 
   response.setHeader("Cache-Control", "max-age=3600, public");
   response.status(200).send(items);
