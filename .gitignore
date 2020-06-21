@@ -97,3 +97,4 @@ typings/
 # parcel generated
 dist
 .now
+.vercel
