@@ -20,7 +20,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-prettier": "^3.1.4",
-    "parcel": "^2.0.0-alpha.3.2",
+    "parcel": "2.0.0-beta.1",
     "prettier": "^1.19.1",
     "typescript": "^3.9.5"
   }
