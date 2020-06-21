@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { NowRequest, NowResponse } from "@now/node";
+import type { NowRequest, NowResponse } from "@now/node";
 import { graphql } from "@octokit/graphql";
 
 export default async (_request: NowRequest, response: NowResponse): Promise<void> => {
