@@ -2,7 +2,7 @@
 import { NowRequest, NowResponse } from "@now/node";
 import { graphql } from "@octokit/graphql";
 
-export default async (request: NowRequest, response: NowResponse): Promise<void> => {
+export default async (_request: NowRequest, response: NowResponse): Promise<void> => {
   const { user } = await graphql(
     `
       {
